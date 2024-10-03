@@ -1,0 +1,56 @@
+/* styles.css */
+QPushButton {
+    background-color: #FFB3D3;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #C0C0C0;
+}
+
+/* styles.qss */
+
+QListWidget {
+    background-color: #fcfcfc;  /* Background color */
+    color: #0a0509;                /* Text color */
+    border: 1px solid #ccc;     /* Border */
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 5px;              /* Padding for each item */
+    height: 20px;               /* Set item height */
+}
+
+QListWidget::item:selected {
+    background-color: #f59dcf;  /* Selection background color */
+    color: white;               /* Selection text color */
+}
+
+QListWidget::item:hover {
+    background-color: #B8CC8A;  /* Background color on hover */
+}
+
+/* Custom scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 7px;
+}
+
+QScrollBar::handle:vertical {
+    background: #fcd2ea;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #888;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+    width: 0px;
+}
